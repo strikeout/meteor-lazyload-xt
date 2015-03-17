@@ -1,0 +1,10 @@
+<template name="img">
+
+    {{#if srcset}}
+        <img data-srcset="{{srcset}}" class="lazy" width="{{width}}" height="{{height}}">
+        {{else}}
+        <img data-src="{{src}}" class="lazy" width="{{width}}" height="{{height}}">
+    {{/if}}
+    <noscript><img src="{{src}}" width="{{width}}" height="{{height}}"></noscript>
+
+</template>
